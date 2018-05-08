@@ -38,3 +38,13 @@ describe('server/app.js', function() {
     });
   });
 })
+
+it('page says hello everyone', (done) => {
+  chai.request(server)
+    .get('/')
+    .end((err, res) => {
+      expect(err).not.exist;
+      expect(JSON.stringify(res.text)).to.contain('Hello Everyone');
+      done();
+    });
+  });
