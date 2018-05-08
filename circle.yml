@@ -2,7 +2,7 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: Deliver-it-Well---Circle-CI
+      appname: deliver-it-well---circle-ci
 machine:
   node:
     version: 8.1.4
